@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700);
+
+body {
+    font-family: 'PT Serif', Courier, sans-serif;
+    font-size: 16pt;
+}
+
+a:link {
+    color: #860000;
+    text-decoration: none;
+}
+a:hover {
+    color: #860000;
+    text-decoration: none;
+}
+a:visited {
+    color: #860000;
+    text-decoration: none;
+}
+
+h1, h2 {
+    margin: 0.1em;
+    padding: 0.1em;
+}
+
+h1 {
+    font-size: 3.0em;
+    font-style: italic;
+    text-align: right;
+}
+
+h2 {
+    font-size: 1.4em;
+    border-bottom: solid 1px lightgray;
+}
+
+ul {
+    list-style: none;
+}

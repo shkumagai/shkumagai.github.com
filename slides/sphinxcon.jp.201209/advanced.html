@@ -1,0 +1,261 @@
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic|Lancelot' rel='stylesheet' type='text/css'>
+    
+    <title>上級者編</title>
+    
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/impress-demo.css" type="text/css" />
+  </head>
+  <body>
+    <div id="impress">
+      <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+      </div>
+      
+  <div class="section" id="id1">
+<h1>上級者編<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="step" data-scale="1" data-x="-2000" data-y="0" id="advanced-1">
+<p class="first">テーマを自分で作ってみたいけど、</p>
+<p class="last">どういう作りなの？</p>
+</div>
+<div class="step" data-scale="1" data-x="-1000" data-y="0" id="advanced-2">
+<p class="first">HTML テーマの構造</p>
+<div class="last highlight-none"><div class="highlight"><pre>pyconjp
+    + theme.conf
+    + layout.html
+        :
+    + static
+        + pyconjp.css_t
+        + pyconjp_2012_logo.png
+</pre></div>
+</div>
+</div>
+<div class="step" data-scale="1" data-x="0" data-y="0" id="advanced-3">
+<ul class="first last simple">
+<li><tt class="docutils literal"><span class="pre">theme.conf</span></tt> ファイル</li>
+<li>テンプレートファイル</li>
+<li>静的ファイル<ul>
+<li>スタイルシート</li>
+<li>画像</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="step" data-scale="1" data-x="1000" data-y="0" id="advanced-4">
+<p class="first">theme.conf</p>
+<div class="last highlight-ini"><div class="highlight"><pre><span class="k">[theme]</span>
+<span class="na">inherit</span> <span class="o">=</span> <span class="s">basic</span>
+<span class="na">stylesheet</span> <span class="o">=</span> <span class="s">pyconjp.css_t</span>
+<span class="na">pygments_style</span> <span class="o">=</span> <span class="s">friendly</span>
+
+<span class="k">[options]</span>
+<span class="na">rightsidebar</span> <span class="o">=</span> <span class="s">false</span>
+</pre></div>
+</div>
+</div>
+<div class="step" data-scale="1" data-x="-2000" data-y="-800" id="advanced-5">
+<p class="first">[theme] セクション</p>
+<ul class="last simple">
+<li>inherit</li>
+<li>stylesheet</li>
+<li>pygments_style</li>
+</ul>
+</div>
+<div class="step" data-scale="1" data-x="-1000" data-y="-800" id="advanced-6">
+<p class="first">[theme] セクション - inherit</p>
+<ul class="last simple">
+<li>継承元テーマを指定します</li>
+<li>継承しない場合は <tt class="docutils literal"><span class="pre">none</span></tt> を指定</li>
+<li>組み込みテーマを部分的に変更したい場合に便利</li>
+</ul>
+</div>
+<div class="step" data-scale="1" data-x="0" data-y="-800" id="advanced-7">
+<p class="first">[theme] セクション - stylesheet</p>
+<ul class="last simple">
+<li>適用するスタイルシート名を指定</li>
+<li>&#8220;静的テンプレート&#8221; ファイル名でもOK</li>
+<li>conf.py の html_style オプション (文字列) で上書き可能</li>
+</ul>
+</div>
+<div class="step" data-scale="1" data-x="1000" data-y="-800" id="advanced-8">
+<p class="first">[theme] セクション - pygments_style</p>
+<ul class="last simple">
+<li>Code Block のスタイル</li>
+<li>Pygments のスタイル名を指定</li>
+<li>conf.py の pygments_style オプション (文字列) で上書き可能</li>
+</ul>
+</div>
+<div class="step" data-scale="1" data-x="2000" data-y="-800" id="advanced-9">
+<p class="first">[options] セクション</p>
+<ul class="last simple">
+<li>テーマ固有のオプションを記述</li>
+<li>「オプション名 = 値」</li>
+<li>conf.py の html_theme_options オプション (辞書) で上書き可能</li>
+</ul>
+</div>
+<div class="step" data-rotate="180" data-scale="1" data-x="2000" data-y="800" id="advanced-10">
+<p class="first">テンプレートファイル</p>
+<div class="last highlight-jinja"><div class="highlight"><pre><span class="c">{#</span>
+<span class="c">    default/layout.html</span>
+<span class="c">    ~~~~~~~~~~~~~~~~~~~</span>
+
+<span class="c">    Sphinx layout template for the default theme.</span>
+
+<span class="c">    :copyright: Copyright 2007-2011 by the Sphinx team, see AUTHORS.</span>
+<span class="c">    :license: BSD, see LICENSE for details.</span>
+<span class="c">#}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">extends</span> <span class="s2">&quot;basic/layout.html&quot;</span> <span class="cp">%}</span><span class="x"></span>
+
+<span class="cp">{%</span> <span class="k">if</span> <span class="nv">theme_collapsiblesidebar</span><span class="o">|</span><span class="nf">tobool</span> <span class="cp">%}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">set</span> <span class="nv">script_files</span> <span class="o">=</span> <span class="nv">script_files</span> <span class="o">+</span> <span class="o">[</span><span class="s1">&#39;_static/sidebar.js&#39;</span><span class="o">]</span> <span class="cp">%}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+</div>
+</div>
+<div class="step" data-rotate="180" data-scale="1" data-x="1000" data-y="800" id="advanced-11">
+<p class="first">テンプレートファイル</p>
+<ul class="last simple">
+<li>Jinja2 のテンプレート</li>
+<li>テンプレートを指定しない場合は、
+継承元のテンプレートをそのまま利用します</li>
+</ul>
+</div>
+<div class="step" data-rotate="180" data-scale="1" data-x="0" data-y="800" id="advanced-12">
+<p class="first">静的ファイル</p>
+<ul class="last simple">
+<li>スタイルシート</li>
+<li>画像ファイル (.jpg, .png 等)</li>
+</ul>
+</div>
+<div class="step" data-rotate="180" data-scale="1" data-x="-1000" data-y="800" id="advanced-13">
+<p class="first">スタイルシート</p>
+<ul class="last simple">
+<li>static template を使えます</li>
+</ul>
+</div>
+<div class="step" data-rotate="180" data-scale="1" data-x="-2000" data-y="800" id="advanced-14">
+<p class="first">static template って何？</p>
+<ul class="last simple">
+<li>静的ファイルのテンプレート化</li>
+<li>make html する時に、値を埋め込めます</li>
+</ul>
+</div>
+<div class="step" data-rotate-x="-90" data-scale="1" data-x="-2000" data-y="1200" data-z="-400" id="advanced-15">
+Example</div>
+<div class="step" data-rotate-x="-90" data-scale="1" data-x="-1000" data-y="1200" data-z="-400" id="advanced-16">
+<p class="first">pyconjp.css_t</p>
+<div class="highlight-guess"><div class="highlight"><pre><span class="x">       :</span>
+<span class="x">div.sphinxsidebar {</span>
+<span class="x">    margin: 0;</span>
+<span class="x">    padding: 0.5em  15px 15px 0;</span>
+<span class="x">    width: </span><span class="cp">{{</span> <span class="nv">theme_sidebarwidth</span><span class="o">|</span><span class="nf">toint</span> <span class="o">-</span> <span class="m">20</span> <span class="cp">}}</span><span class="x">px</span>
+<span class="x">    float: right;</span>
+<span class="x">    font-size: 1em;</span>
+<span class="x">    text-align: left;</span>
+<span class="x">}</span>
+<span class="x">       :</span>
+</pre></div>
+</div>
+<p>書き方:</p>
+<div class="last highlight-none"><div class="highlight"><pre>* オプション名に theme_ プレフィクスを付ける
+* 置換したい箇所に {{ , }} を使って埋め込む
+</pre></div>
+</div>
+</div>
+<div class="step" data-rotate-x="-90" data-scale="1" data-x="0" data-y="1200" data-z="-400" id="advanced-17">
+<p class="first">theme.conf</p>
+<div class="last highlight-guess"><div class="highlight"><pre><span class="k">[theme]</span>
+<span class="na">inherit</span> <span class="o">=</span> <span class="s">basic</span>
+<span class="na">stylesheet</span> <span class="o">=</span> <span class="s">pyconjp.css_t</span>
+<span class="na">pygments_style</span> <span class="o">=</span> <span class="s">sphinx</span>
+
+<span class="k">[options]</span>
+<span class="na">sidebarwidth</span> <span class="o">=</span> <span class="s">170</span>
+</pre></div>
+</div>
+</div>
+<div class="step" data-rotate-x="-90" data-scale="1" data-x="1000" data-y="1200" data-z="-400" id="advanced-18">
+<p class="first">pyconjp.css</p>
+<div class="highlight-guess"><div class="highlight"><pre>       <span class="p">:</span>
+<span class="n">div</span><span class="p">.</span><span class="n">sphinxsidebar</span> <span class="p">{</span>
+    <span class="n">margin</span><span class="p">:</span> 0<span class="p">;</span>
+    <span class="n">padding</span><span class="p">:</span> 0<span class="p">.</span>5<span class="n">em</span>  15<span class="n">px</span> 15<span class="n">px</span> 0<span class="p">;</span>
+    <span class="n">width</span><span class="p">:</span> 150<span class="n">px</span>
+    <span class="n">float</span><span class="p">:</span> <span class="n">right</span><span class="p">;</span>
+    <span class="n">font</span><span class="o">-</span><span class="nb">size</span><span class="p">:</span> 1<span class="n">em</span><span class="p">;</span>
+    <span class="n">text</span><span class="o">-</span><span class="n">align</span><span class="p">:</span> <span class="n">left</span><span class="p">;</span>
+<span class="p">}</span>
+       <span class="p">:</span>
+</pre></div>
+</div>
+<p></p>
+<div class="last highlight-none"><div class="highlight"><pre>* 数値だけではなく、文字列も OK
+* HTML テンプレートと同様にフィルタも使えます
+</pre></div>
+</div>
+</div>
+<div class="step" data-rotate-x="-90" data-scale="1" data-x="-2000" data-y="1200" data-z="-1200" id="advanced-19">
+<p class="first">これらを一つのディレクトリに入れます</p>
+<div class="last highlight-none"><div class="highlight"><pre>pyconjp
+    + theme.conf
+    + layout.html
+         :
+    + static
+        + pyconjp.css_t
+        + pyconjp_2012_logo.png
+</pre></div>
+</div>
+</div>
+<div class="step" data-rotate-x="-90" data-scale="1" data-x="-1000" data-y="1200" data-z="-1200" id="advanced-20">
+<p class="first">このディレクトリを Sphinx の</p>
+<p>ドキュメントルートに置きます。</p>
+<div class="last highlight-none"><div class="highlight"><pre>some_document
+    + _static
+    + _templates
+    + conf.py
+    + index.rst
+    + pyconjp     &lt;-- New!
+</pre></div>
+</div>
+</div>
+<div class="step" data-rotate-x="-90" data-scale="1" data-x="0" data-y="1200" data-z="-1200" id="advanced-21">
+<p class="first"><em>conf.py</em> でテーマのパスを指定します。これで make html すると。。。</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># Add any paths that contain custom themes here, relative to</span>
+<span class="c"># this directory.</span>
+<span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;.&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<ul class="last simple">
+<li><em>conf.py</em> からの相対パスで指定できます。</li>
+</ul>
+</div>
+<div class="step" data-rotate-x="-90" data-scale="1" data-x="1000" data-y="1200" data-z="-1200" id="advanced-22">
+<p class="first">自作テーマのドキュメントが！！</p>
+<p>（下の画像はイメージです）</p>
+<img alt="HTML Theme: sphinxjp.themes.bizstyle" class="last" src="_images/theme_bizstyle.png" style="width: 60%;" />
+</div>
+<div class="step" data-rotate-x="-90" data-scale="1" data-x="2000" data-y="1200" data-z="-1200" id="advanced-23">
+<p class="first">今日の内容は <a class="reference external" href="http://sphinx.pocoo.org/theming.html">HTML テーマサポート</a> のページに</p>
+<p>書かれているものです。</p>
+<p class="last">公式ドキュメントを参考に、色々と触ってみてください。</p>
+</div>
+<div class="step" data-scale="8" data-x="0" data-y="0" id="overview">
+</div>
+</div>
+
+
+    </div>
+    <div class="hint">
+      <b>Use a space bar or arrow keys to navigate</b>
+    </div>
+    
+    <script type="text/javascript" src="_static/impress.js"></script>
+  </body>
+</html>
