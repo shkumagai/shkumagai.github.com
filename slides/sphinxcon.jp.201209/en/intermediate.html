@@ -1,0 +1,182 @@
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic|Lancelot' rel='stylesheet' type='text/css'>
+    
+    <title>Intermediate</title>
+    
+    <script type="text/javascript" src="../static/jquery.js"></script>
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../static/impress-demo.css" type="text/css" />
+  </head>
+  <body>
+    <div id="impress">
+      <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+      </div>
+      
+  <div class="section" id="intermediate">
+<h1>Intermediate<a class="headerlink" href="#intermediate" title="Permalink to this headline">¶</a></h1>
+<div class="step" data-rotate-y="-90" data-scale="2" data-x="-3000" data-y="-2000" id="intermediate-1">
+Now, we knew how to use theme.</div>
+<div class="step" data-scale="1" data-x="-2500" data-y="-2000" id="intermediate-2">
+Then, what should I do in these cases?</div>
+<div class="step" data-scale="1" data-x="-2500" data-y="-1600" id="intermediate-3-0">
+<ul class="first last simple">
+<li>Change Back-ground color.</li>
+</ul>
+</div>
+<div class="step" data-scale="1" data-x="-2500" data-y="-800" id="intermediate-3-1">
+<p class="first">Before ...</p>
+<img alt="HTML Theme: default" class="last" src="../images/theme_default.png" style="width: 70%;" />
+</div>
+<div class="step" data-scale="1" data-x="-2500" data-y="0" id="intermediate-3-2">
+<p class="first">After ...</p>
+<img alt="HTML Theme: default" class="last" src="../images/change_bg_color.png" style="width: 70%;" />
+</div>
+<div class="step" data-scale="1" data-x="-2500" data-y="800" id="intermediate-3-3">
+<div class="first last highlight-python"><div class="highlight"><pre><span class="c"># The theme to use for HTML and HTML Help pages.</span>
+<span class="c"># See the documentation for a list of builtin themes.</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s">&#39;default&#39;</span>
+
+<span class="c"># Theme options are theme-specific and customize the look</span>
+<span class="c"># and feel of a theme further.</span>
+<span class="c"># For a list of options available for each theme, see the</span>
+<span class="c"># documentation.</span>
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">&quot;bgcolor&quot;</span><span class="p">:</span> <span class="s">&quot;#fdf6e3&quot;</span><span class="p">,</span>
+    <span class="s">&quot;sidebarbgcolor&quot;</span><span class="p">:</span> <span class="s">&quot;#eee8d5&quot;</span><span class="p">,</span>
+    <span class="s">&quot;relbarbgcolor&quot;</span><span class="p">:</span> <span class="s">&quot;#93a1a1&quot;</span><span class="p">,</span>
+    <span class="s">&quot;footerbgcolor&quot;</span><span class="p">:</span> <span class="s">&quot;#fdf6e3&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="step" data-scale="1" data-x="-1500" data-y="-1600" id="intermediate-4-0">
+<ul class="first last simple">
+<li>Change text and link color.</li>
+</ul>
+</div>
+<div class="step" data-scale="1" data-x="-1500" data-y="-800" id="intermediate-4-1">
+<p class="first">Before ...</p>
+<img alt="HTML Theme: default" class="last" src="../images/theme_default.png" style="width: 70%;" />
+</div>
+<div class="step" data-scale="1" data-x="-1500" data-y="0" id="intermediate-4-2">
+<p class="first">After ...</p>
+<img alt="HTML Theme: default" class="last" src="../images/change_text_color.png" style="width: 70%;" />
+</div>
+<div class="step" data-scale="1" data-x="-1500" data-y="800" id="intermediate-4-3">
+<div class="first last highlight-python"><div class="highlight"><pre><span class="c"># The theme to use for HTML and HTML Help pages.</span>
+<span class="c"># See the documentation for a list of builtin themes.</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s">&#39;default&#39;</span>
+
+<span class="c"># Theme options are theme-specific and customize the look</span>
+<span class="c"># and feel of a theme further.</span>
+<span class="c"># For a list of options available for each theme, see the</span>
+<span class="c"># documentation.</span>
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">&quot;linkcolor&quot;</span><span class="p">:</span> <span class="s">&quot;#268bd2&quot;</span><span class="p">,</span>
+    <span class="s">&quot;textcolor&quot;</span><span class="p">:</span> <span class="s">&quot;#657b83&quot;</span><span class="p">,</span>
+    <span class="s">&quot;sidebarlinkcolor&quot;</span><span class="p">:</span> <span class="s">&quot;#2aa198&quot;</span><span class="p">,</span>
+    <span class="s">&quot;sidebartextcolor&quot;</span><span class="p">:</span> <span class="s">&quot;#fdf6e3&quot;</span><span class="p">,</span>
+    <span class="s">&quot;relbarlinkcolor&quot;</span><span class="p">:</span> <span class="s">&quot;#268bd2&quot;</span><span class="p">,</span>
+    <span class="s">&quot;relbartextcolor&quot;</span><span class="p">:</span> <span class="s">&quot;#cb4b16&quot;</span><span class="p">,</span>
+    <span class="s">&quot;footertextcolor&quot;</span><span class="p">:</span> <span class="s">&quot;#93a1a1&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="step" data-scale="1" data-x="-500" data-y="-1600" id="intermediate-5-0">
+<ul class="first last simple">
+<li>Display a sidebar to right side.</li>
+</ul>
+</div>
+<div class="step" data-scale="1" data-x="-500" data-y="-800" id="intermediate-5-1">
+<p class="first">Before ...</p>
+<img alt="HTML Theme: default" class="last" src="../images/theme_default.png" style="width: 70%;" />
+</div>
+<div class="step" data-scale="1" data-x="-500" data-y="0" id="intermediate-5-2">
+<p class="first">After ...</p>
+<img alt="HTML Theme: default" class="last" src="../images/right_sidebar.png" style="width: 70%;" />
+</div>
+<div class="step" data-scale="1" data-x="-500" data-y="800" id="intermediate-5-3">
+<div class="first last highlight-python"><div class="highlight"><pre><span class="c"># The theme to use for HTML and HTML Help pages.</span>
+<span class="c"># See the documentation for a list of builtin themes.</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s">&#39;default&#39;</span>
+
+<span class="c"># Theme options are theme-specific and customize the look</span>
+<span class="c"># and feel of a theme further.</span>
+<span class="c"># For a list of options available for each theme, see the</span>
+<span class="c"># documentation.</span>
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">&quot;rightsidebar&quot;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="step" data-scale="1" data-x="500" data-y="-1600" id="intermediate-6-0">
+<ul class="first last simple">
+<li>Hide a sidebar.</li>
+</ul>
+</div>
+<div class="step" data-scale="1" data-x="500" data-y="-800" id="intermediate-6-1">
+<p class="first">Before ...</p>
+<img alt="HTML Theme: default" class="last" src="../images/theme_default.png" style="width: 70%;" />
+</div>
+<div class="step" data-scale="1" data-x="500" data-y="0" id="intermediate-6-2">
+<p class="first">After ...</p>
+<img alt="HTML Theme: default" class="last" src="../images/hide_sidebar.png" style="width: 70%;" />
+</div>
+<div class="step" data-scale="1" data-x="500" data-y="800" id="intermediate-6-3">
+<div class="first last highlight-python"><div class="highlight"><pre><span class="c"># The theme to use for HTML and HTML Help pages.</span>
+<span class="c"># See the documentation for a list of builtin themes.</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s">&#39;default&#39;</span>
+
+<span class="c"># Theme options are theme-specific and customize the look</span>
+<span class="c"># and feel of a theme further.</span>
+<span class="c"># For a list of options available for each theme, see the</span>
+<span class="c"># documentation.</span>
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">&quot;nosidebar&quot;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="step" data-scale="1" data-x="1500" data-y="-1600" id="intermediate-7-0">
+Other options of &#8220;default&#8221; theme?</div>
+<div class="step" data-scale="1" data-x="1500" data-y="-800" id="intermediate-7-1">
+<div class="first last highlight-none"><div class="highlight"><pre>nosidebar           footerbgcolor     bgcolor
+sidebarwidth        footertextcolor   textcolor
+rightsidebar        sidebarbgcolor    linkcolor
+stickysidebar       sidebarbtncolor   visitedlinkcolor
+collapsiblesidebar  sidebartextcolor  headbgcolor
+externalrefs        sidebarlinkcolor  headtextcolor
+                    relbarbgcolor     codebgcolor
+bodyfont            relbartextcolor   codetextcolor
+headfont            relbarlinkcolor
+</pre></div>
+</div>
+</div>
+<div class="step" data-scale="1" data-x="1500" data-y="0" id="intermediate-7-2">
+<p class="first">Other theme have options
+(Some theme have no own option).</p>
+<p>Please refer to <a class="reference external" href="http://sphinx.pocoo.org/theming.html#builtin-themes">Builtin themes</a> section of official document, for details.</p>
+<p class="last">Next, <a class="reference external" href="advanced.html">Advanced</a></p>
+</div>
+<div class="step" data-scale="8" data-x="0" data-y="0" id="overview">
+</div>
+</div>
+
+
+    </div>
+    <div class="hint">
+      <b>Use a space bar or arrow keys to navigate</b>
+    </div>
+    
+    <script type="text/javascript" src="../static/impress.js"></script>
+  </body>
+</html>
