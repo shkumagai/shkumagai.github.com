@@ -56,8 +56,8 @@ Gist
 .. _Github: https://github.com/shkumagai
 .. _Bitbucket: https://bitbucket.org/shkumagai/
 
-.. _ja: slides/sphinxcon.jp.201209/ja/index.html
-.. _en: slides/sphinxcon.jp.201209/en/index.html
+.. _ja: ../../slides/sphinxcon.jp.201209/ja/index.html
+.. _en: ../../slides/sphinxcon.jp.201209/en/index.html
 
 .. _`sphinxjp.themes.bizstyle`: http://pypi.python.org/pypi/sphinxjp.themes.bizstyle
 .. _`sphinxjp.themes.dotted`: http://pypi.python.org/pypi/sphinxjp.themes.dotted
