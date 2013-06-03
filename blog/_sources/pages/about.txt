@@ -1,0 +1,65 @@
+About
+=====
+
+Who?
+----
+
+- `Twitter`_
+- `はてなダイアリー`_
+
+
+Repositories
+------------
+
+- Github_
+- Bitbucket_
+
+
+Works
+-----
+
+Presentation
+~~~~~~~~~~~~
+
+- SphinxCon JP 2012 (ja_, en_)
+
+
+Opus
+~~~~
+
+Sphinx HTML Themes
+++++++++++++++++++
+
+- `sphinxjp.themes.bizstyle`_
+- `sphinxjp.themes.dotted`_
+- `sphinxjp.themes.impressjs`_
+
+
+Pygments Style
+++++++++++++++
+
+- `pygments-style-solarized`_
+
+
+Gist
+++++
+
+- `modulesetup.py <https://gist.github.com/shkumagai/5299118>`_
+- `Using Unicode in Erlang <https://gist.github.com/shkumagai/5270218>`_
+
+
+.. links
+
+.. _Twitter: https://twitter.com/shkumagai
+.. _`はてなダイアリー`: http://d.hatena.ne.jp/navyfox_sh/
+
+.. _Github: https://github.com/shkumagai
+.. _Bitbucket: https://bitbucket.org/shkumagai/
+
+.. _ja: slides/sphinxcon.jp.201209/ja/index.html
+.. _en: slides/sphinxcon.jp.201209/en/index.html
+
+.. _`sphinxjp.themes.bizstyle`: http://pypi.python.org/pypi/sphinxjp.themes.bizstyle
+.. _`sphinxjp.themes.dotted`: http://pypi.python.org/pypi/sphinxjp.themes.dotted
+.. _`sphinxjp.themes.impressjs`: http://pypi.python.org/pypi/sphinxjp.themes.impressjs
+.. _`pygments-style-solarized`: http://pypi.python.org/pypi/pygments-style-solarized
