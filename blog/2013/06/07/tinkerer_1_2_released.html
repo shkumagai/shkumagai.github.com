@@ -1,0 +1,156 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <title>Tinkerer 1.2 がリリースされました &mdash; doing mistakes</title>
+            <link rel="stylesheet" href="../../../_static/normalize.css" type="text/css">
+            <link rel="stylesheet" href="../../../_static/main.css" type="text/css">
+            <link rel="stylesheet" href="../../../_static/lucid.css" type="text/css">
+            <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+            <link rel="stylesheet" href="../../../_static/webfont.css" type="text/css">
+        <link rel="shortcut icon" href="../../../_static/tinkerer.ico" /><!-- Load modernizr and JQuery -->
+        <script src="../../../_static/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../../_static/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="../../../_static/plugins.js"></script>
+        <script src="../../../_static/main.js"></script>
+        <link rel="next" title="ブログを移行してみました" href="../03/newblog.html" /><link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.html" /><script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script><script type="text/javascript" src="../../../_static/underscore.js"></script><script type="text/javascript" src="../../../_static/doctools.js"></script><script type="text/javascript" src="../../../_static/disqus.js"></script></head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+      <div id="container"><header>
+            <hgroup>
+              <h1><a href="../../../index.html">doing mistakes</a></h1>
+              <h2>Still, more useful than a life spent doing nothing</h2>
+            </hgroup>
+          </header>
+      <nav>
+            <ul><li class="quicklink"><div class="rss">
+        <a href="../../../rss.html" title="Subscribe via RSS"><span class="webfont">B</span></a>
+    </div></li><li class="main-nav">
+                  <a href="../../../index.html">Home</a>
+                </li>
+              <li class="main-nav">
+                  <a href="../../../pages/about.html">About</a>
+                </li>
+              </ul>
+          </nav><div class="main-container"><div class="main wrapper clearfix"><article><ul class="related clearfix">
+            <li class="left"></li>
+            <li class="right"><a href="../03/newblog.html">ブログを移行してみました</a> &raquo; </li>
+        </ul><div class="timestamp postmeta">
+            <span>June 07, 2013</span>
+        </div>
+    <div class="section" id="tinkerer-1-2">
+<h1>Tinkerer 1.2 がリリースされました</h1>
+<p>Twitter上で <a class="reference external" href="https://twitter.com/r_rudi">&#64;r_rudi</a> さんがおっしゃっていましたが、Tinkerer 1.2がリリース
+されました。公式サイトのポストの日付は「June 05, 2013」となっているので、
+日本時間的には６日のリリースになるでしょうか。</p>
+<div class="section" id="id1">
+<h2>1.2のトピック</h2>
+<p>今回のリリースのトピックは次の通り（ブログ記事から）:</p>
+<ul class="simple">
+<li>TinkererのリポジトリがBitBucketからGithubに移行。
+BitBucketの方もまだ残っているけど、開発はGithubでやります。</li>
+<li>読むのに気が散らないデザインと <a class="reference external" href="http://ethanschoonover.com/solarized">Solarized</a> dark のPygmentsスタイルを
+コードハイライトに組み込んだ <em>flat</em> テーマを作成。
+<a class="reference external" href="`プレビュー`__">プレビューはこちら</a> 。</li>
+<li><span class="docutils literal"><span class="pre">readmore</span></span> を使っていても記事全文のRSSフィードを生成する、
+<span class="docutils literal"><span class="pre">rss_generate_full_post</span></span> という <span class="docutils literal"><span class="pre">conf.py</span></span> の設定を追加。</li>
+<li>イタリア語ローカライズを追加。</li>
+<li>バグ修正。</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>ざっくりとした印象</h2>
+<p>メインリポジトリがBitBucketからGithubに移行、ということでSCMツールも
+MercurialからGitに変更になるようです。Mercurialユーザにとっては、
+少々気になる変更点かも知れませんね。</p>
+<p>使い勝手の視点では、変更点は２つ。新しいテーマの追加とRSSに関する設定の
+追加です。</p>
+<p><em>flat</em> テーマは <a class="reference external" href="http://tinkerer.me/index_flat.html">プレビュー</a> を見て頂くのが一番だと思いますが、白が基調の
+３カラムデザインがベースなっていて、コードハイライトには独自にカスタマイズ
+したSolarized darkのPygmentsスタイルを採用しています。WebFontも使っている
+ので、OSやブラウザ環境による表示の差異にも配慮されているのが良い感じです。
+もちろんレスポンシブデザインレイアウトに対応しているので、画面サイズ毎に
+読みやすいレイアウトに切り替わってくれます。</p>
+<p>RSSの設定の追加は、記事を書く側もそうですが、フィードを読む側にとっても
+影響のある内容かと思います。自分はRSSリーダをあまり使うことがないのですが、
+フィードで全文が読めるか否か、というのはユーザの利便性等を考えると、任意に
+設定ができることが好ましいのかも知れませんね。</p>
+</div>
+<div class="section" id="id3">
+<h2>まとめ</h2>
+<p>本当にざっくりと、ですが書いてみました。
+少しずつ、でも着実に改善が進んでいるのが好印象ですね。</p>
+<p>今後は自分もなんらかの形でContributeして行きたいと思います。</p>
+</div>
+</div>
+
+    <div class="postmeta">
+        <div class="author">
+            <span>Posted by Shoji KUMAGAI</span>
+        </div>
+        <div class="categories">
+            <span>
+                Filed under:
+                <a href="../../../categories/tech.html">tech</a></span>
+        </div>
+        <div class="tags">
+            <span>
+                Tags:
+                <a href="../../../tags/tinkerer.html">tinkerer</a>, <a href="../../../tags/python.html">python</a></span>
+        </div>
+        </div>
+    <div id="disqus_thread"></div><script type="text/javascript">    var disqus_shortname = "doingmistakes";    var disqus_identifier = "2013/06/07/tinkerer_1_2_released";    disqus_thread();</script><noscript>Please enable JavaScript to view the    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><ul class="related clearfix">
+            <li class="left"></li>
+            <li class="right"><a href="../03/newblog.html">ブログを移行してみました</a> &raquo; </li>
+        </ul></article><aside class="sidebar"><section><div class="widget">
+    <h1>Recent Posts</h1>
+    <ul><li>
+            <a href="#">Tinkerer 1.2 がリリースされました</a>
+        </li><li>
+            <a href="../03/newblog.html">ブログを移行してみました</a>
+        </li></ul>
+</div>
+</section><section><div class="widget" id="searchbox">
+    <h1>Search</h1>
+    <form action="../../../search.html" method="get">
+        <input type="text" name="q" />
+        <button type="submit"><span class="webfont">L</span></button>
+    </form>
+</div></section><section><div class="widget">
+    <h1>Categories</h1>
+    <ul><li><a href="../../../categories/tech.html">tech</a> (1)</li></ul>
+</div></section></aside></div> <!-- #main --></div> <!-- #main-container -->
+
+        <div class="footer-container"><footer class="wrapper">&copy; Copyright 2009-2013, Shoji KUMAGAI. Powered by <a href="http://www.tinkerer.me/">Tinkerer</a> and <a href="http://sphinx.pocoo.org/">Sphinx</a>.</footer></div> <!-- footer-container -->
+
+      </div> <!--! end of #container --><!--[if lt IE 7 ]>
+          <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+          <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+        <![endif]-->
+    </body>
+</html>
