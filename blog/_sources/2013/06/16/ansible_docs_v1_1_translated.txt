@@ -76,6 +76,6 @@ CLIで単発のコマンドを実行するところから始め、徐々に広�
    http://tdoc.info/blog/2013/04/20/ansible.html
 
 .. author:: default
-.. categories:: python, ansible
-.. tags:: none
+.. categories:: tech
+.. tags:: python, ansible
 .. comments::
