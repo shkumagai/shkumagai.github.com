@@ -16,7 +16,7 @@ Twitter上で `@r_rudi`_ さんがおっしゃっていましたが、Tinkerer 1
 
 - 読むのに気が散らないデザインと Solarized_ dark のPygmentsスタイルを
   コードハイライトに組み込んだ *flat* テーマを作成。
-  `プレビューはこちら`_ 。
+  `プレビューはこちら`__ 。
 
 - ``readmore`` を使っていても記事全文のRSSフィードを生成する、
   ``rss_generate_full_post`` という ``conf.py`` の設定を追加。
@@ -58,11 +58,18 @@ RSSの設定の追加は、記事を書く側もそうですが、フィード�
 今後は自分もなんらかの形でContributeして行きたいと思います。
 
 
+参考URL
+-------
+
+- http://tinkerer.me/index.html
+- https://github.com/vladris/tinkerer
+
+
 .. Links
 .. _`@r_rudi`: https://twitter.com/r_rudi
 .. _Solarized: http://ethanschoonover.com/solarized
 .. _`プレビュー`: http://tinkerer.me/index_flat.html
-.. _`プレビューはこちら`: `プレビュー`__
+__ `プレビュー`_
 
 
 .. author:: default
