@@ -1,0 +1,81 @@
+ansible v1.1 ドキュメントを翻訳しました
+=======================================
+
+世間的には既に次のバージョン(Version1.2)がリリースされているので、今更の観が
+ありますが、いちおう頑張って翻訳してみたので公開します。
+
+https://github.com/shkumagai/ansible-doc-ja/tree/v1.1
+
+.. contents:
+   :depth: 1
+
+
+Ansibleってなに？
+-----------------
+
+- `構成管理ツール Ansible について - apatheia.info`_
+- `ansibleを使ってみる - そこはかとなく書くよん。`_
+
+既に何人かの方々がブログで紹介記事を書かれているので、自分の方で敢えて書く必要も
+ないかと思いますが、一言で言い表すなら、Pythonで書かれた構成管理ツールです。
+
+ChefやPuppet、SaltStackあたりと似たツールになりますね。
+
+インストール方法や使い方についてはここでは触れません。
+
+
+v1.1のドキュメント？
+--------------------
+
+冒頭にも書きましたが、このAnsible、2013/6/10にバージョン1.2がリリースされた
+ばかりです。
+
+- https://pypi.python.org/pypi/ansible/1.2
+
+.. - http://www.ansibleworks.com/docs/
+.. - https://github.com/ansible/ansible
+
+にも関わらず、今更v1.1のドキュメント？と思うかも知れませんね。
+
+はい。その通りです。とはいえ５月の中頃から翻訳を始め、ちまちまと一人でやっている
+のでごらんの通りの進み具合です。
+
+apiとglossaryのファイルがまだ完了していないのですが、ansibleを使ってみる上で
+おおよそ必要な内容は既に翻訳した内容で必要十分だと思われます。
+
+読む順序としては、
+
+#. gettingstarted
+#. patterns
+#. examples
+#. playbooks
+#. playbooks2
+#. bestpractices
+
+といった感じでしょうか。
+
+CLIで単発のコマンドを実行するところから始め、徐々に広げていくようなイメージ
+ですね。
+
+
+翻訳の質については、あくまで個人で進めているものなので、あまり良いものでは
+ないでしょうが、読み進める上で大きな問題になることはないと思います。
+もしよければ目を通してみてください。Ansibleを触ってみるキッカケになれば幸い
+です。
+
+なお、訳文に対するツッコミや翻訳への参加はいつでも受け付けています。
+
+自分もやりたい！という人がいたら、ご連絡ください。よろしくお願いします。
+
+
+
+.. _`構成管理ツール Ansible について - apatheia.info`:
+   http://apatheia.info/blog/2013/04/06/about-ansible/
+
+.. _`ansibleを使ってみる - そこはかとなく書くよん。`:
+   http://tdoc.info/blog/2013/04/20/ansible.html
+
+.. author:: default
+.. categories:: python, ansible
+.. tags:: none
+.. comments::
