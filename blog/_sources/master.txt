@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2013/08/19/ansible_docs_v1_2_2_translated
    2013/06/16/ansible_docs_v1_1_translated
    2013/06/07/tinkerer_1_2_released
    2013/06/03/newblog
