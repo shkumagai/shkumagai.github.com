@@ -46,7 +46,7 @@ Gist
 
 - `modulesetup.py <https://gist.github.com/shkumagai/5299118>`_
 - `Using Unicode in Erlang <https://gist.github.com/shkumagai/5270218>`_
-
+- `Goコードの書き方 <https://gist.github.com/shkumagai/6069017>`_
 
 .. links
 
