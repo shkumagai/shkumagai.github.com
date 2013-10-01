@@ -17,7 +17,6 @@
         <meta name="viewport" content="width=device-width">
         <title>Home &mdash; doing mistakes</title>
             <link rel="stylesheet" href="_static/normalize.css" type="text/css">
-            <link rel="stylesheet" href="_static/sphinx.css" type="text/css">
             <link rel="stylesheet" href="_static/main.css" type="text/css">
             <link rel="stylesheet" href="_static/tinkerpress.css" type="text/css">
             <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -31,7 +30,7 @@
         <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.html" /><script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.2.1',
+        VERSION:     '1.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -44,7 +43,9 @@
 
       <div id="container"><header>
             <hgroup>
-              <h1><a href="#">doing mistakes</a></h1><h2>Still, more useful than a life spent doing nothing</h2></hgroup>
+              <h1><a href="#">doing mistakes</a></h1>
+              <h2>Still, more useful than a life spent doing nothing</h2>
+            </hgroup>
           </header>
       <nav>
             <ul><li class="quicklink"><div class="rss">
@@ -57,72 +58,122 @@
                 </li>
               </ul>
           </nav><div class="main-container"><div class="main wrapper clearfix"><article><div class="timestamp postmeta">
-            <span>9月 19, 2013</span>
+            <span>October 01, 2013</span>
         </div>
-        <div class="section" id="pycon-apac-2013">
-<h1><a href="2013/09/19/pycon_apac_2013.html"><a class="toc-backref" href="#id4">PyCon APAC 2013 で当日スタッフをしていました</a></a></h1>
-<p>イベントが終了して少し間が空いてしまいましたが、参加報告エントリです。</p>
-<p><a class="reference external" href="http://apac-2013.pycon.jp/ja">http://apac-2013.pycon.jp/ja/</a></p>
-<div class="contents topic" id="local">
-<p class="topic-title first">local</p>
+        <div class="section" id="pygments-style-solarized-v0-1-1">
+<h1><a href="2013/10/01/pygments_style_solarized_v0_1_1_released.html"><a class="toc-backref" href="#id5">pygments style solarized v0.1.1 リリースしました</a></a></h1>
+<p>昨年のPyConJP2012の直後にリリースしてから放置状態になっていたパッケージに対して、海外の方々からissueを貰ったり、pull requestが来たりしていたので、流れでリリースまでやってしまいました。</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="2013/09/19/pycon_apac_2013.html#pycon-apac-2013" id="id4">PyCon APAC 2013 で当日スタッフをしていました</a><ul>
-<li><a class="reference internal" href="2013/09/19/pycon_apac_2013.html#pycon" id="id5">PyCon とは</a></li>
-<li><a class="reference internal" href="2013/09/19/pycon_apac_2013.html#apac" id="id6">APAC って付いてるけど？</a></li>
-<li><a class="reference internal" href="2013/09/19/pycon_apac_2013.html#id1" id="id7">そこで何をしていたのか</a></li>
-<li><a class="reference internal" href="2013/09/19/pycon_apac_2013.html#id2" id="id8">撮影した写真は？</a></li>
-<li><a class="reference internal" href="2013/09/19/pycon_apac_2013.html#id3" id="id9">で、どうだったの？</a></li>
+<li><a class="reference internal" href="2013/10/01/pygments_style_solarized_v0_1_1_released.html#pygments-style-solarized-v0-1-1" id="id5">pygments style solarized v0.1.1 リリースしました</a><ul>
+<li><a class="reference internal" href="2013/10/01/pygments_style_solarized_v0_1_1_released.html#id1" id="id6">なんていうパッケージ？</a></li>
+<li><a class="reference internal" href="2013/10/01/pygments_style_solarized_v0_1_1_released.html#id2" id="id7">どんな感じなの？</a></li>
+<li><a class="reference internal" href="2013/10/01/pygments_style_solarized_v0_1_1_released.html#id3" id="id8">どうすれば使える？</a></li>
+<li><a class="reference internal" href="2013/10/01/pygments_style_solarized_v0_1_1_released.html#v0-1-1" id="id9">v0.1.1 での変更点は？</a></li>
+<li><a class="reference internal" href="2013/10/01/pygments_style_solarized_v0_1_1_released.html#id4" id="id10">今後は？</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="section" id="pycon">
-<h2><a class="toc-backref" href="#id5">PyCon とは</a></h2>
-<p>プログラミング言語Pythonのユーザが集まるカンファレンスです。ユーザと言っても趣味で触っている個人から、業務や案件で使っている企業の方までさまざまです。</p>
-<p>そういった人たちが一同に会して、自分たちがどうやってPythonを使っているか、Pythonで何ができるのか、Pythonはどう使うと楽しいのか、といったことについて熱く語ったりするイベントです。</p>
-</div>
-<div class="section" id="apac">
-<h2><a class="toc-backref" href="#id6">APAC って付いてるけど？</a></h2>
-<p>はい。</p>
-<p>2011年、2012年はPyCon JPという形で、主に日本国内のユーザや企業を主体としたイベントを意図して開催していましたが、今年はAPAC（アジア・環太平洋地域）を対象としたイベントとして開催されました。</p>
-<p>キーノートスピーカとして、Python製ドキュメント生成ツールSphinxの作者であるGeorg Brandlと、DropBoxの３番目のエンジニアであるRian Hunterの二人を迎え、国際的なカンファレンスとして日本語のトラックだけではなく、英語のトラックも設けられ、アジアに限らず欧州や北米地域からセッションのために来日したエンジニアも多数参加してくれていました。</p>
-</div>
 <div class="section" id="id1">
-<h2><a class="toc-backref" href="#id7">そこで何をしていたのか</a></h2>
-<p>詳しいレポートや、それぞれのセッションの様子等はレポート記事やオフィシャルのYouTubeムービーをご覧頂くとして、では私は当日何をしていたのか、について。</p>
-<p>当日は写真（スチル）担当として、会場のそこかしこで写真を撮っておりました。</p>
-<p>カメラを片手に歩くあご髭を伸ばしたカメラマンを会場のいずこかで見かけた方もいらっしゃるでしょうか。それが私です。</p>
-<p>PyCon JP として国内でカンファレンスを始めた当初から、当日の写真撮影を担当しておりまして、貧弱な機材とさして上手くもないウデでどうにかイベントを盛り上げるべく協力をさせて頂いてます。</p>
-<p>声を掛けてくださった副座長の shomah4a さん、ありがとうございます。</p>
+<h2><a class="toc-backref" href="#id6">なんていうパッケージ？</a></h2>
+<p><a class="reference external" href="https://pypi.python.org/pypi/pygments-style-solarized">pygments-style-solarized</a> といいます。</p>
+<p><a class="reference external" href="https://pypi.python.org/pypi/pygments-style-solarized">pygments-style-solarized</a> は <a class="reference external" href="http://pygments.org">Pygments</a> の拡張モジュールです。
+<a class="reference external" href="http://pygments.org">Pygments</a> はPythonで書かれたシンタックスハイライタで、ドキュメントツール<a class="reference external" href="http://sphinx-doc.org">Sphinx</a> でも利用しているのでどこかでご覧なったことがある人も多いと思います。</p>
+<p><a class="reference external" href="http://pygments.org">Pygments</a> は組み込みで幾つかのスタイルを持っていますが、拡張のためのインターフェースを持っているので自分の好みのスタイルを作ることができます。
+<a class="reference external" href="https://pypi.python.org/pypi/pygments-style-solarized">pygments-style-solarized</a> もそうして作ったモジュールの一つです。</p>
 </div>
 <div class="section" id="id2">
-<h2><a class="toc-backref" href="#id8">撮影した写真は？</a></h2>
-<p>私を含め、期間中は２＋１名のカメラスタッフが会場のそこかしこで被写体を求め、やおらシャッターを切っていたわけですが、撮影した総数はおそらく2,000枚程度になります。</p>
-<p>さすがにすべての写真をウェブに上げるには多すぎるのと、撮り損ないやら公開すべきでないやらといった写真のフィルタリングの作業を行った上で実行委員会の方からオフィシャルのウェブアルバムという形で公開をさせて頂くことになるかと思います。</p>
-<p>アルバムに含まれる写真の総数は、だいたい2〜300枚くらいになると思われます。
-（あくまで予想ですが…）</p>
+<h2><a class="toc-backref" href="#id7">どんな感じなの？</a></h2>
+<p>実際にハイライトされたコードを見てみましょう。
+なお、サンプルのコードに特に意味はありません。</p>
+<p>Python:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">uint32_to_native_hex</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; pack unsigned int as native bytes, and unpack as hex. &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">byteorder</span> <span class="o">==</span> <span class="s">'big'</span><span class="p">:</span>
+        <span class="n">ORDER_MARK</span> <span class="o">=</span> <span class="s">'&gt;'</span>  <span class="c"># big endian</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ORDER_MARK</span> <span class="o">=</span> <span class="s">'&lt;'</span>  <span class="c"># little endian</span>
+    <span class="n">fmt_uint</span> <span class="o">=</span> <span class="n">ORDER_MARK</span> <span class="o">+</span> <span class="s">'I'</span>
+    <span class="k">return</span> <span class="n">hexlify</span><span class="p">(</span><span class="n">pack</span><span class="p">(</span><span class="n">fmt_uint</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">int_to_hex</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">octets</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; hex representation as network order with size of ``octets``</span>
+<span class="sd">    ex) int_to_hex(1)     # =&gt; &quot;0001&quot;</span>
+<span class="sd">        int_to_hex(32, 4) # =&gt; &quot;00000020&quot;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">(</span><span class="s">'</span><span class="si">%%</span><span class="s">0</span><span class="si">%d</span><span class="s">x'</span> <span class="o">%</span> <span class="p">(</span><span class="n">octets</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span> <span class="o">%</span> <span class="n">value</span>
+
+
+<span class="k">def</span> <span class="nf">ipv4_to_hex</span><span class="p">(</span><span class="n">ip_address</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s">''</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">int_to_hex</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ip_address</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">'.'</span><span class="p">)])</span>
+</pre></div>
+</div>
+<p>Emacs lisp:</p>
+<div class="highlight-common-lisp"><div class="highlight"><pre><span class="c1">;; Library Paths</span>
+<span class="p">(</span><span class="nb">defun</span> <span class="nv">add-to-load-path</span> <span class="p">(</span><span class="k">&amp;rest</span> <span class="nv">paths</span><span class="p">)</span>
+  <span class="p">(</span><span class="k">let</span> <span class="p">(</span><span class="nv">path</span><span class="p">)</span>
+    <span class="p">(</span><span class="nb">dolist</span> <span class="p">(</span><span class="nv">path</span> <span class="nv">paths</span> <span class="nv">paths</span><span class="p">)</span>
+      <span class="p">(</span><span class="k">let</span> <span class="p">((</span><span class="nv">default-directory</span> <span class="p">(</span><span class="nv">expand-file-name</span>
+                                <span class="p">(</span><span class="nv">concat</span> <span class="nv">user-emacs-directory</span> <span class="nv">path</span><span class="p">))))</span>
+    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">'load-path</span> <span class="nv">default-directory</span><span class="p">)</span>
+    <span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nb">fboundp</span> <span class="ss">'normal-top-level-add-subdirs-to-load-path</span><span class="p">)</span>
+        <span class="p">(</span><span class="nv">normal-top-level-add-subdirs-to-load-path</span><span class="p">))))))</span>
+
+<span class="c1">;; add-to-load-path</span>
+<span class="p">(</span><span class="nv">add-to-load-path</span> <span class="s">&quot;conf&quot;</span> <span class="s">&quot;elisp&quot;</span><span class="p">)</span>
+
+<span class="c1">;; require Common-Lisp functions.</span>
+<span class="p">(</span><span class="nb">require</span> <span class="ss">'cl</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="http://ethanschoonover.com/solarized">Solarized</a> にはlightとdarkの２つのカラースキームがあります。淡く明るい背景色をベースに配色を組み立てたlightと濃く暗い背景色をベースにしたdarkです。
+これはdarkと呼ばれるカラースキームになります。</p>
 </div>
 <div class="section" id="id3">
-<h2><a class="toc-backref" href="#id9">で、どうだったの？</a></h2>
-<p>毎度のことなのですが、想像以上に疲れました。特にセッションスピーカのみなさんの顔（表情）を撮るのが難しい。もちろん、できる限り撮りましたが。。。</p>
-<p>そんなこんなで公開用のアルバムに向けて鋭意選定中ですので、しばらくお待ちください。
-出来上がったアルバムを気に入って頂ければ幸いです。</p>
+<h2><a class="toc-backref" href="#id8">どうすれば使える？</a></h2>
+<p><a class="reference external" href="http://pygments.org">Pygments</a> を使用する際に、 <a class="reference external" href="https://pypi.python.org/pypi/pygments-style-solarized">pygments-style-solarized</a> も一緒にインストールしてもらえれば、あとは <a class="reference external" href="http://pygments.org">Pygments</a> のスタイルで <span class="docutils literal"><span class="pre">solarizedlight</span></span> または
+<span class="docutils literal"><span class="pre">solarizeddark</span></span> を指定するだけで使えます。</p>
+<p><a class="reference external" href="http://sphinx-doc.org">Sphinx</a> で利用する場合も同様で、 <a class="reference external" href="https://pypi.python.org/pypi/pygments-style-solarized">pygments-style-solarized</a> をインストールしておき、ドキュメントプロジェクトのconf.pyに次のように記述すればOKです:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">pygments_style</span> <span class="o">=</span> <span class="s">&quot;solarizedlight&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="v0-1-1">
+<h2><a class="toc-backref" href="#id9">v0.1.1 での変更点は？</a></h2>
+<p>恥ずかしながら、typoの修正のみです。</p>
+<p>２点修正があり、ひとつはスタイルクラスのコメントの誤りの修正です。
+こちらは <a class="reference external" href="https://github.com/shkumagai/pygments-style-solarized/issues/1">issue</a> を登録してもらいました。</p>
+<p>もうひとつはスタイル定義の中で色を指定する16進数のtypoで、こちらは<a class="reference external" href="https://github.com/shkumagai/pygments-style-solarized/pull/2">pull request</a> を頂きました。</p>
+<p>おかげ様でようやく正しい色調で表示できることと、相成りました。はい。</p>
+</div>
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id10">今後は？</a></h2>
+<p>少し申し訳ない気もしますが、自分の手で積極的に修正をしていくつもりはありません。</p>
+<p>ですが、元々思いつきで作ってみたものなので、配色のバランスなどで意に沿わない部分がある人もいるかと思います。vimやらemacsやらのエディタ向けに配布されているテーマと比較すると、配色が異なる部分が気になることもあるでしょう。</p>
+<p>そんな時は「自分ならこうする」というアイデアを、ぜひpull requestの形で見せて頂ければと思います。</p>
 </div>
 </div>
         <div class="postmeta">
         <div class="author">
             <span>Posted by Shoji KUMAGAI</span>
         </div>
-        
+        <div class="categories">
+            <span>
+                Filed under:
+                <a href="categories/tech.html">tech</a></span>
+        </div>
         <div class="tags">
             <span>
                 Tags:
-                <a href="tags/python.html">python</a>, <a href="tags/pycon.html">pycon</a></span>
+                <a href="tags/python.html">python</a>, <a href="tags/sphinx.html">sphinx</a>, <a href="tags/pygments.html">pygments</a>, <a href="tags/tinkerer.html">tinkerer</a>, <a href="tags/solarized.html">solarized</a></span>
         </div>
         <div class="comments">
-            <a href="http://shkumagai.github.io/blog/2013/09/19/pycon_apac_2013.html#disqus_thread" data-disqus-identifier="2013/09/19/pycon_apac_2013">Leave a comment</a>
+            <a href="http://shkumagai.github.io/blog/2013/10/01/pygments_style_solarized_v0_1_1_released.html#disqus_thread" data-disqus-identifier="2013/10/01/pygments_style_solarized_v0_1_1_released">Leave a comment</a>
         </div></div><div class="separator post_separator"></div><div class="timestamp postmeta">
-            <span>8月 19, 2013</span>
+            <span>August 19, 2013</span>
         </div>
         <div class="section" id="ansible-v1-2-2">
 <h1><a href="2013/08/19/ansible_docs_v1_2_2_translated.html">ansible v1.2.2 ドキュメントを翻訳しました</a></h1>
@@ -170,7 +221,7 @@
         <div class="comments">
             <a href="http://shkumagai.github.io/blog/2013/08/19/ansible_docs_v1_2_2_translated.html#disqus_thread" data-disqus-identifier="2013/08/19/ansible_docs_v1_2_2_translated">Leave a comment</a>
         </div></div><div class="separator post_separator"></div><div class="timestamp postmeta">
-            <span>6月 16, 2013</span>
+            <span>June 16, 2013</span>
         </div>
         <div class="section" id="ansible-v1-1">
 <h1><a href="2013/06/16/ansible_docs_v1_1_translated.html">ansible v1.1 ドキュメントを翻訳しました</a></h1>
@@ -237,7 +288,7 @@
         <div class="comments">
             <a href="http://shkumagai.github.io/blog/2013/06/16/ansible_docs_v1_1_translated.html#disqus_thread" data-disqus-identifier="2013/06/16/ansible_docs_v1_1_translated">Leave a comment</a>
         </div></div><div class="separator post_separator"></div><div class="timestamp postmeta">
-            <span>6月 07, 2013</span>
+            <span>June 07, 2013</span>
         </div>
         <div class="section" id="tinkerer-1-2">
 <h1><a href="2013/06/07/tinkerer_1_2_released.html">Tinkerer 1.2 がリリースされました</a></h1>
@@ -308,7 +359,7 @@ MercurialからGitに変更になるようです。Mercurialユーザにとっ�
         <div class="comments">
             <a href="http://shkumagai.github.io/blog/2013/06/07/tinkerer_1_2_released.html#disqus_thread" data-disqus-identifier="2013/06/07/tinkerer_1_2_released">Leave a comment</a>
         </div></div><div class="separator post_separator"></div><div class="timestamp postmeta">
-            <span>6月 03, 2013</span>
+            <span>June 03, 2013</span>
         </div>
         <div class="section" id="id1">
 <h1><a href="2013/06/03/newblog.html"><a class="toc-backref" href="#id5">ブログを移行してみました</a></a></h1>
@@ -391,11 +442,11 @@ PRを出してみようと考えています。</p>
         <div class="comments">
             <a href="http://shkumagai.github.io/blog/2013/06/03/newblog.html#disqus_thread" data-disqus-identifier="2013/06/03/newblog">Leave a comment</a>
         </div></div><div class="archive_link">
-        <a href="archive.html"> &mdash; Blog Archive &mdash; </a>
+        <a href="archive.html"> &mdash;  Blog Archive  &mdash; </a>
     </div></article><aside class="sidebar"><section><div class="widget">
     <h1>Recent Posts</h1>
     <ul><li>
-            <a href="2013/09/19/pycon_apac_2013.html">PyCon APAC 2013 で当日スタッフをしていました</a>
+            <a href="2013/10/01/pygments_style_solarized_v0_1_1_released.html">pygments style solarized v0.1.1 リリースしました</a>
         </li><li>
             <a href="2013/08/19/ansible_docs_v1_2_2_translated.html">ansible v1.2.2 ドキュメントを翻訳しました</a>
         </li><li>
@@ -414,7 +465,7 @@ PRを出してみようと考えています。</p>
     </form>
 </div></section><section><div class="widget">
     <h1>Categories</h1>
-    <ul><li><a href="categories/tech.html">tech</a> (3)</li></ul>
+    <ul><li><a href="categories/tech.html">tech</a> (4)</li></ul>
 </div></section></aside></div> <!-- #main --></div> <!-- #main-container -->
 
         <div class="footer-container"><footer class="wrapper">&copy; Copyright 2009-2013, Shoji KUMAGAI. Powered by <a href="http://www.tinkerer.me/">Tinkerer</a> and <a href="http://sphinx.pocoo.org/">Sphinx</a>.</footer></div> <!-- footer-container -->

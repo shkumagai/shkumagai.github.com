@@ -1,0 +1,141 @@
+pygments style solarized v0.1.1 リリースしました
+================================================
+
+昨年のPyConJP2012の直後にリリースしてから放置状態になっていたパッケージに\
+対して、海外の方々からissueを貰ったり、pull requestが来たりしていたので、\
+流れでリリースまでやってしまいました。
+
+.. contents:: Contents
+
+
+なんていうパッケージ？
+----------------------
+
+pygments-style-solarized_ といいます。
+
+pygments-style-solarized_ は Pygments_ の拡張モジュールです。
+Pygments_ はPythonで書かれたシンタックスハイライタで、ドキュメントツール\
+Sphinx_ でも利用しているのでどこかでご覧なったことがある人も多いと思います。
+
+Pygments_ は組み込みで幾つかのスタイルを持っていますが、拡張のための\
+インターフェースを持っているので自分の好みのスタイルを作ることができます。
+pygments-style-solarized_ もそうして作ったモジュールの一つです。
+
+
+どんな感じなの？
+----------------
+
+実際にハイライトされたコードを見てみましょう。
+なお、サンプルのコードに特に意味はありません。
+
+Python:
+
+.. code-block:: python
+
+   def uint32_to_native_hex(value):
+       """ pack unsigned int as native bytes, and unpack as hex. """
+       if sys.byteorder == 'big':
+           ORDER_MARK = '>'  # big endian
+       else:
+           ORDER_MARK = '<'  # little endian
+       fmt_uint = ORDER_MARK + 'I'
+       return hexlify(pack(fmt_uint, value))
+
+
+   def int_to_hex(value, octets=2):
+       """ hex representation as network order with size of ``octets``
+       ex) int_to_hex(1)     # => "0001"
+           int_to_hex(32, 4) # => "00000020"
+       """
+       return ('%%0%dx' % (octets * 2)) % value
+
+
+   def ipv4_to_hex(ip_address):
+       return ''.join([int_to_hex(int(i), 1) for i in ip_address.split('.')])
+
+Emacs lisp:
+
+.. code-block:: common-lisp
+
+   ;; Library Paths
+   (defun add-to-load-path (&rest paths)
+     (let (path)
+       (dolist (path paths paths)
+         (let ((default-directory (expand-file-name
+                                   (concat user-emacs-directory path))))
+       (add-to-list 'load-path default-directory)
+       (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
+           (normal-top-level-add-subdirs-to-load-path))))))
+
+   ;; add-to-load-path
+   (add-to-load-path "conf" "elisp")
+
+   ;; require Common-Lisp functions.
+   (require 'cl)
+
+
+Solarized_ にはlightとdarkの２つのカラースキームがあります。淡く明るい背景色を\
+ベースに配色を組み立てたlightと濃く暗い背景色をベースにしたdarkです。
+これはdarkと呼ばれるカラースキームになります。
+
+
+どうすれば使える？
+------------------
+
+Pygments_ を使用する際に、 pygments-style-solarized_ も一緒にインストールして\
+もらえれば、あとは Pygments_ のスタイルで ``solarizedlight`` または
+``solarizeddark`` を指定するだけで使えます。
+
+Sphinx_ で利用する場合も同様で、 pygments-style-solarized_ をインストールして\
+おき、ドキュメントプロジェクトのconf.pyに次のように記述すればOKです:
+
+.. code-block:: python
+
+   pygments_style = "solarizedlight"
+
+
+v0.1.1 での変更点は？
+---------------------
+
+恥ずかしながら、typoの修正のみです。
+
+２点修正があり、ひとつはスタイルクラスのコメントの誤りの修正です。
+こちらは issue_ を登録してもらいました。
+
+もうひとつはスタイル定義の中で色を指定する16進数のtypoで、こちらは\
+`pull request`_ を頂きました。
+
+おかげ様でようやく正しい色調で表示できることと、相成りました。はい。
+
+
+今後は？
+--------
+
+少し申し訳ない気もしますが、自分の手で積極的に修正をしていくつもりはありません。
+
+ですが、元々思いつきで作ってみたものなので、配色のバランスなどで意に沿わない\
+部分がある人もいるかと思います。vimやらemacsやらのエディタ向けに配布されている\
+テーマと比較すると、配色が異なる部分が気になることもあるでしょう。
+
+そんな時は「自分ならこうする」というアイデアを、ぜひpull requestの形で見せて\
+頂ければと思います。
+
+
+.. _pygments-style-solarized:
+   https://pypi.python.org/pypi/pygments-style-solarized/
+.. _Pygments: http://pygments.org/
+.. _Solarized: http://ethanschoonover.com/solarized
+.. _`sphinxjp.themes.tinkerpress`:
+   https://pypi.python.org/pypi/sphinxjp.themes.tinkerpress/
+.. _Sphinx: http://sphinx-doc.org/
+
+.. _issue:
+   https://github.com/shkumagai/pygments-style-solarized/issues/1
+.. _`pull request`:
+   https://github.com/shkumagai/pygments-style-solarized/pull/2
+
+
+.. author:: default
+.. categories:: tech
+.. tags:: python, sphinx, pygments, tinkerer, solarized
+.. comments::
