@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2014/08/19/sphinxjp_themes_bizstyle_0_1_6_released
    2013/10/01/pygments_style_solarized_v0_1_1_released
    2013/09/19/pycon_apac_2013
    2013/08/19/ansible_docs_v1_2_2_translated

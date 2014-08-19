@@ -5,14 +5,68 @@
         <link>http://shkumagai.github.io/blog/</link>
         <description>Still, more useful than a life spent doing nothing</description>
         <language>en-us</language>
-        <pubDate>Tue, 01 Oct 2013 00:00:00 +0900</pubDate>
+        <pubDate>Tue, 19 Aug 2014 00:00:00 +0900</pubDate>
         
+        <item>
+            <link>http://shkumagai.github.io/blog/2014/08/19/sphinxjp_themes_bizstyle_0_1_6_released.html</link>
+            <guid>http://shkumagai.github.io/blog/2014/08/19/sphinxjp_themes_bizstyle_0_1_6_released.html</guid>
+            <title><![CDATA[sphinxjp.themes.bizstyle v0.1.6 をリリースしました]]></title>
+            <description><![CDATA[<h1><a class="toc-backref" href="#id3">sphinxjp.themes.bizstyle v0.1.6 をリリースしました</a></h1>
+<p>最後にこのblogで記事を書いたのは今を遡ること10ヶ月、昨年10月01日でした。</p>
+<p>そのまましばらく記事にできるような活動を一切しないままここまで来てしまった
+わけですが、今日は久しぶりの更新です。</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="http://shkumagai.github.io/blog/2014/08/19/sphinxjp_themes_bizstyle_0_1_6_released.html#sphinxjp-themes-bizstyle-v0-1-6" id="id3">sphinxjp.themes.bizstyle v0.1.6 をリリースしました</a><ul>
+<li><a class="reference internal" href="http://shkumagai.github.io/blog/2014/08/19/sphinxjp_themes_bizstyle_0_1_6_released.html#id1" id="id4">リリースの概要</a></li>
+<li><a class="reference internal" href="http://shkumagai.github.io/blog/2014/08/19/sphinxjp_themes_bizstyle_0_1_6_released.html#sphinx-pr" id="id5">Sphinx 本体へのPR</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2><a class="toc-backref" href="#id4">リリースの概要</a></h2>
+<p>タイトルの通り、みんな大好きSphinxの拡張HTMLテーマである
+<a class="reference external" href="https://pypi.python.org/pypi/sphinxjp.themes.bizstyle">sphinxjp.themes.bizstyle</a> の新しいバージョンをリリースしました。</p>
+<p>今回のリリースは主にissueのFixになります。</p>
+<p>これによって、表示に不具合等が出ていた部分について、期待する表示になるように
+変更されています。</p>
+<p>そのほかの変更点は次のとおりです。</p>
+<ul>
+<li><p class="first">Sphinx 1.2からは sphinxjp.themecore の機能がSphinx本体に取り込まれているためbizstyleのパッケージから sphinxjp.themecore の依存を外しました</p>
+<p>Sphinx 1.2未満を使用していて、新規にbizstyleを利用しようとする場合には
+sphinxjp.themecore が自動でインストールされなくなりますのでご注意ください。</p>
+</li>
+<li><p class="first">bizstyleのメンテナンス環境を整えるために、これまでbuildoutを利用していましたが、これをvirtualenv（venv）を利用するように変更しました。
+このため bootstrap.py や buildout.cfg などのファイルが削除されています。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="sphinx-pr">
+<h2><a class="toc-backref" href="#id5">Sphinx 本体へのPR</a></h2>
+<p>そしてこの度、bizstyleを正式にSphinx本体のコードベースに取り込んで頂くため、
+Sphinx本体へプルリクエストを出しました。</p>
+<p>状況ですが、プルリクエストは無事に受理され次期リリースバージョンに含められる方向で進んでいるようです。</p>
+<p>これまで個別にインストールして利用されていた皆さんには朗報かと思いますし、
+利用されたことのない方々にも使って頂ける機会が増えることになるので、嬉しい
+ような恐ろしいような微妙な心境です。</p>
+<p>なお、今後のテーマのメンテナンスをどう進めていくかについては実際にSphinxの
+次期バージョンがリリースされてから考えることになると思いますが、bizstyle
+テーマについてのリクエストや提案などについては、当面 bitbucket 上の
+<a class="reference external" href="https://bitbucket.org/shkumagai/sphinxjp.themes.bizstyle">sphinxjp.themes.bizstyle リポジトリ</a> で受け付けます。
+表示の不具合やその他気づいた点などありましたら、お気軽にご相談ください。</p>
+</div>
+]]></description>
+            <category><![CDATA[ tech ]]></category>
+             <pubDate>Tue, 19 Aug 2014 00:00:00 +0900</pubDate>
+        </item>
+    
         <item>
             <link>http://shkumagai.github.io/blog/2013/10/01/pygments_style_solarized_v0_1_1_released.html</link>
             <guid>http://shkumagai.github.io/blog/2013/10/01/pygments_style_solarized_v0_1_1_released.html</guid>
             <title><![CDATA[pygments style solarized v0.1.1 リリースしました]]></title>
-            <description><![CDATA[<div class="section" id="pygments-style-solarized-v0-1-1">
-<h1><a class="toc-backref" href="#id5">pygments style solarized v0.1.1 リリースしました</a></h1>
+            <description><![CDATA[<h1><a class="toc-backref" href="#id5">pygments style solarized v0.1.1 リリースしました</a></h1>
 <p>昨年のPyConJP2012の直後にリリースしてから放置状態になっていたパッケージに対して、海外の方々からissueを貰ったり、pull requestが来たりしていたので、流れでリリースまでやってしまいました。</p>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
@@ -41,7 +95,7 @@
 なお、サンプルのコードに特に意味はありません。</p>
 <p>Python:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">uint32_to_native_hex</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; pack unsigned int as native bytes, and unpack as hex. &quot;&quot;&quot;</span>
+    <span class="sd">""" pack unsigned int as native bytes, and unpack as hex. """</span>
     <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">byteorder</span> <span class="o">==</span> <span class="s">'big'</span><span class="p">:</span>
         <span class="n">ORDER_MARK</span> <span class="o">=</span> <span class="s">'&gt;'</span>  <span class="c"># big endian</span>
     <span class="k">else</span><span class="p">:</span>
@@ -51,10 +105,10 @@
 
 
 <span class="k">def</span> <span class="nf">int_to_hex</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">octets</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; hex representation as network order with size of ``octets``</span>
-<span class="sd">    ex) int_to_hex(1)     # =&gt; &quot;0001&quot;</span>
-<span class="sd">        int_to_hex(32, 4) # =&gt; &quot;00000020&quot;</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="sd">""" hex representation as network order with size of ``octets``</span>
+<span class="sd">    ex) int_to_hex(1)     # =&gt; "0001"</span>
+<span class="sd">        int_to_hex(32, 4) # =&gt; "00000020"</span>
+<span class="sd">    """</span>
     <span class="k">return</span> <span class="p">(</span><span class="s">'</span><span class="si">%%</span><span class="s">0</span><span class="si">%d</span><span class="s">x'</span> <span class="o">%</span> <span class="p">(</span><span class="n">octets</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span> <span class="o">%</span> <span class="n">value</span>
 
 
@@ -74,7 +128,7 @@
         <span class="p">(</span><span class="nv">normal-top-level-add-subdirs-to-load-path</span><span class="p">))))))</span>
 
 <span class="c1">;; add-to-load-path</span>
-<span class="p">(</span><span class="nv">add-to-load-path</span> <span class="s">&quot;conf&quot;</span> <span class="s">&quot;elisp&quot;</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">add-to-load-path</span> <span class="s">"conf"</span> <span class="s">"elisp"</span><span class="p">)</span>
 
 <span class="c1">;; require Common-Lisp functions.</span>
 <span class="p">(</span><span class="nb">require</span> <span class="ss">'cl</span><span class="p">)</span>
@@ -88,7 +142,7 @@
 <p><a class="reference external" href="http://pygments.org">Pygments</a> を使用する際に、 <a class="reference external" href="https://pypi.python.org/pypi/pygments-style-solarized">pygments-style-solarized</a> も一緒にインストールしてもらえれば、あとは <a class="reference external" href="http://pygments.org">Pygments</a> のスタイルで <span class="docutils literal"><span class="pre">solarizedlight</span></span> または
 <span class="docutils literal"><span class="pre">solarizeddark</span></span> を指定するだけで使えます。</p>
 <p><a class="reference external" href="http://sphinx-doc.org">Sphinx</a> で利用する場合も同様で、 <a class="reference external" href="https://pypi.python.org/pypi/pygments-style-solarized">pygments-style-solarized</a> をインストールしておき、ドキュメントプロジェクトのconf.pyに次のように記述すればOKです:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">pygments_style</span> <span class="o">=</span> <span class="s">&quot;solarizedlight&quot;</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">pygments_style</span> <span class="o">=</span> <span class="s">"solarizedlight"</span>
 </pre></div>
 </div>
 </div>
@@ -106,7 +160,7 @@
 <p>ですが、元々思いつきで作ってみたものなので、配色のバランスなどで意に沿わない部分がある人もいるかと思います。vimやらemacsやらのエディタ向けに配布されているテーマと比較すると、配色が異なる部分が気になることもあるでしょう。</p>
 <p>そんな時は「自分ならこうする」というアイデアを、ぜひpull requestの形で見せて頂ければと思います。</p>
 </div>
-</div>]]></description>
+]]></description>
             <category><![CDATA[ tech ]]></category>
              <pubDate>Tue, 01 Oct 2013 00:00:00 +0900</pubDate>
         </item>
@@ -115,8 +169,7 @@
             <link>http://shkumagai.github.io/blog/2013/09/19/pycon_apac_2013.html</link>
             <guid>http://shkumagai.github.io/blog/2013/09/19/pycon_apac_2013.html</guid>
             <title><![CDATA[PyCon APAC 2013 で当日スタッフをしてきました]]></title>
-            <description><![CDATA[<div class="section" id="pycon-apac-2013">
-<h1><a class="toc-backref" href="#id4">PyCon APAC 2013 で当日スタッフをしてきました</a></h1>
+            <description><![CDATA[<h1><a class="toc-backref" href="#id4">PyCon APAC 2013 で当日スタッフをしてきました</a></h1>
 <p>イベントが終了して少し間が空いてしまいましたが、参加報告エントリです。</p>
 <p><a class="reference external" href="http://apac-2013.pycon.jp/ja">http://apac-2013.pycon.jp/ja/</a></p>
 <div class="contents topic" id="local">
@@ -164,7 +217,7 @@
 <p>そんなこんなで公開用のアルバムに向けて鋭意選定中ですので、しばらくお待ちください。
 出来上がったアルバムを気に入って頂ければ幸いです。</p>
 </div>
-</div>]]></description>
+]]></description>
              <pubDate>Thu, 19 Sep 2013 00:00:00 +0900</pubDate>
         </item>
     
@@ -172,8 +225,7 @@
             <link>http://shkumagai.github.io/blog/2013/08/19/ansible_docs_v1_2_2_translated.html</link>
             <guid>http://shkumagai.github.io/blog/2013/08/19/ansible_docs_v1_2_2_translated.html</guid>
             <title><![CDATA[ansible v1.2.2 ドキュメントを翻訳しました]]></title>
-            <description><![CDATA[<div class="section" id="ansible-v1-2-2">
-<h1>ansible v1.2.2 ドキュメントを翻訳しました</h1>
+            <description><![CDATA[<h1>ansible v1.2.2 ドキュメントを翻訳しました</h1>
 <p>だいぶ遅れてしまいましたが(Version1.2.2)のドキュメントを翻訳してみたので、
 ブログで紹介しておきます。</p>
 <p><a class="reference external" href="https://github.com/shkumagai/ansible-doc-ja">https://github.com/shkumagai/ansible-doc-ja</a></p>
@@ -200,7 +252,7 @@
 </ul>
 <p>特別に大きな変更はありません。下手すると変更に気付かないくらいです。</p>
 </div>
-</div>]]></description>
+]]></description>
             <category><![CDATA[ tech ]]></category>
              <pubDate>Mon, 19 Aug 2013 00:00:00 +0900</pubDate>
         </item>
@@ -209,8 +261,7 @@
             <link>http://shkumagai.github.io/blog/2013/06/16/ansible_docs_v1_1_translated.html</link>
             <guid>http://shkumagai.github.io/blog/2013/06/16/ansible_docs_v1_1_translated.html</guid>
             <title><![CDATA[ansible v1.1 ドキュメントを翻訳しました]]></title>
-            <description><![CDATA[<div class="section" id="ansible-v1-1">
-<h1>ansible v1.1 ドキュメントを翻訳しました</h1>
+            <description><![CDATA[<h1>ansible v1.1 ドキュメントを翻訳しました</h1>
 <p>世間的には既に次のバージョン(Version1.2)がリリースされているので、今更の観が
 ありますが、いちおう頑張って翻訳してみたので公開します。</p>
 <p><a class="reference external" href="https://github.com/shkumagai/ansible-doc-ja/tree/v1.1">https://github.com/shkumagai/ansible-doc-ja/tree/v1.1</a></p>
@@ -256,7 +307,7 @@
 <p>なお、訳文に対するツッコミや翻訳への参加はいつでも受け付けています。</p>
 <p>自分もやりたい！という人がいたら、ご連絡ください。よろしくお願いします。</p>
 </div>
-</div>]]></description>
+]]></description>
             <category><![CDATA[ tech ]]></category>
              <pubDate>Sun, 16 Jun 2013 00:00:00 +0900</pubDate>
         </item>
@@ -265,8 +316,7 @@
             <link>http://shkumagai.github.io/blog/2013/06/07/tinkerer_1_2_released.html</link>
             <guid>http://shkumagai.github.io/blog/2013/06/07/tinkerer_1_2_released.html</guid>
             <title><![CDATA[Tinkerer 1.2 がリリースされました]]></title>
-            <description><![CDATA[<div class="section" id="tinkerer-1-2">
-<h1>Tinkerer 1.2 がリリースされました</h1>
+            <description><![CDATA[<h1>Tinkerer 1.2 がリリースされました</h1>
 <p>Twitter上で <a class="reference external" href="https://twitter.com/r_rudi">@r_rudi</a> さんがおっしゃっていましたが、Tinkerer 1.2がリリース
 されました。公式サイトのポストの日付は「June 05, 2013」となっているので、
 日本時間的には６日のリリースになるでしょうか。</p>
@@ -316,7 +366,7 @@ MercurialからGitに変更になるようです。Mercurialユーザにとっ�
 <li><a class="reference external" href="https://github.com/vladris/tinkerer">https://github.com/vladris/tinkerer</a></li>
 </ul>
 </div>
-</div>]]></description>
+]]></description>
             <category><![CDATA[ tech ]]></category>
              <pubDate>Fri, 07 Jun 2013 00:00:00 +0900</pubDate>
         </item>
@@ -325,8 +375,7 @@ MercurialからGitに変更になるようです。Mercurialユーザにとっ�
             <link>http://shkumagai.github.io/blog/2013/06/03/newblog.html</link>
             <guid>http://shkumagai.github.io/blog/2013/06/03/newblog.html</guid>
             <title><![CDATA[ブログを移行してみました]]></title>
-            <description><![CDATA[<div class="section" id="id1">
-<h1><a class="toc-backref" href="#id5">ブログを移行してみました</a></h1>
+            <description><![CDATA[<h1><a class="toc-backref" href="#id5">ブログを移行してみました</a></h1>
 <p>以前ははてなダイアリーで書いていたブログを、ちょっくら移行してみようと
 思い立ってやってみました。</p>
 <div class="contents topic" id="contents">
@@ -379,7 +428,8 @@ Rubyの環境を用意するところから、ということもありました�
 <p>これらを踏まえて自分なりに考えてみた結果、結論としてはTinkererを選択する
 ことにしました。</p>
 <p>理由は、ただ一つ:</p>
-<div class="highlight-python"><pre>覚えることが一番少ない</pre>
+<div class="highlight-python"><div class="highlight"><pre>覚えることが一番少ない
+</pre></div>
 </div>
 <p>です。</p>
 <p>記事のソースはreStructuredText形式で記述すればよいですし、生成されるHTMLも
@@ -396,7 +446,7 @@ Sphinxで身につけたノウハウが使いまわせます。困る要素が�
 とどめていますが、ある程度チェックができたら <a class="reference external" href="https://github.com/vladris/tinkerer-contrib">tinkerer-contrib</a>  あたりに
 PRを出してみようと考えています。</p>
 </div>
-</div>]]></description>
+]]></description>
              <pubDate>Mon, 03 Jun 2013 00:00:00 +0900</pubDate>
         </item>
     

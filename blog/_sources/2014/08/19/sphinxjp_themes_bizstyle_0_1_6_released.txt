@@ -1,0 +1,65 @@
+sphinxjp.themes.bizstyle v0.1.6 をリリースしました
+==================================================
+
+最後にこのblogで記事を書いたのは今を遡ること10ヶ月、昨年10月01日でした。
+
+そのまましばらく記事にできるような活動を一切しないままここまで来てしまった
+わけですが、今日は久しぶりの更新です。
+
+.. contents:: Contents
+
+
+リリースの概要
+--------------
+
+タイトルの通り、みんな大好きSphinxの拡張HTMLテーマである
+sphinxjp.themes.bizstyle_ の新しいバージョンをリリースしました。
+
+今回のリリースは主にissueのFixになります。
+
+これによって、表示に不具合等が出ていた部分について、期待する表示になるように
+変更されています。
+
+そのほかの変更点は次のとおりです。
+
+- Sphinx 1.2からは sphinxjp.themecore の機能がSphinx本体に取り込まれて\
+  いるためbizstyleのパッケージから sphinxjp.themecore の依存を外しました
+
+  Sphinx 1.2未満を使用していて、新規にbizstyleを利用しようとする場合には
+  sphinxjp.themecore が自動でインストールされなくなりますのでご注意ください。
+
+- bizstyleのメンテナンス環境を整えるために、これまでbuildoutを利用して\
+  いましたが、これをvirtualenv（venv）を利用するように変更しました。
+  このため bootstrap.py や buildout.cfg などのファイルが削除されています。
+
+
+Sphinx 本体へのPR
+-----------------
+
+そしてこの度、bizstyleを正式にSphinx本体のコードベースに取り込んで頂くため、
+Sphinx本体へプルリクエストを出しました。
+
+状況ですが、プルリクエストは無事に受理され次期リリースバージョンに\
+含められる方向で進んでいるようです。
+
+これまで個別にインストールして利用されていた皆さんには朗報かと思いますし、
+利用されたことのない方々にも使って頂ける機会が増えることになるので、嬉しい
+ような恐ろしいような微妙な心境です。
+
+なお、今後のテーマのメンテナンスをどう進めていくかについては実際にSphinxの
+次期バージョンがリリースされてから考えることになると思いますが、bizstyle
+テーマについてのリクエストや提案などについては、当面 bitbucket 上の
+`sphinxjp.themes.bizstyle リポジトリ`_ で受け付けます。
+表示の不具合やその他気づいた点などありましたら、お気軽にご相談ください。
+
+
+.. _sphinxjp.themes.bizstyle:
+   https://pypi.python.org/pypi/sphinxjp.themes.bizstyle
+
+.. _`sphinxjp.themes.bizstyle リポジトリ`:
+   https://bitbucket.org/shkumagai/sphinxjp.themes.bizstyle
+
+.. author:: default
+.. categories:: tech
+.. tags:: python, sphinx, html, theme
+.. comments::
