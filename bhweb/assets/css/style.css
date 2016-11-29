@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+    margin-top: 80px;
+}
+
+.jumbotron.special {
+    position: relative;
+    min-height: 530px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    /* background-image: url("../../images/shutters-669296_1920.jpg"); */
+    background-image: url("../../images/IMG_1812.JPG");
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+}
+
+.jumbotron.special .layerTransparent {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.jumbotron.special .outline {
+    margin-top: 120px;
+    margin-bottom: 130px;
+    color: #333;
+}
+
+.jumbotron.special h1,
+.jumbotron.special .h1 {
+    font-family: Montserrat, sans-serif;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.section-news { background-color: #fdfdff; }
+.section-culture { background-color: #dfefff; }
+
+.section-culture .image-box {
+    text-align: center;
+}
+
+.section-culture .image-box .image {
+    width: 320px;
+    height: 240px;
+    margin: 0 30px 20px 30px;
+}
+
+.section-culture .image-box .image img {
+    width: 320px;
+    height: 240px;
+}
+
+section .section-title {
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.section-contact .contact-wrapper {
+    display: block;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+.section-contact .contact-wrapper .contact-detail {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-contact .contact-wrapper .contact-detail dl dt {
+    display: table-cell;
+    width: 90px;
+    vertical-align: middle;
+    /* font-size: 14px; */
+    line-height: 25.2px;
+    color: #999;
+    font-weight: normal;
+}
+
+.section-contact .contact-wrapper .contact-detail dl dd {
+    display: table-cell;
+    /* font-size: 14px; */
+    line-height: 25.2px;
+    color: #666;
+}
+
+dl {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+dd {
+    margin-left: 0;
+}
+
+.news-wrapper .news {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.news-wrapper .news .news-date {
+    display: table-cell;
+    width: 110px;
+    text-aligh: right;
+    padding-right: 15px;
+}
+
+footer {
+    padding: 40px 0;
+    color: #eee;
+    background-color: #222;
+}
