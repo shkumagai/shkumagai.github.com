@@ -10,9 +10,21 @@ body {
 .mt30 { margin-top: 30px; }
 
 header .navbar-header .navbar-brand {
-    font-size: 1.4em;
-    margin-left: 1.0em;
+    font-size: 2.05em;
+    margin-left: 0.75em;
+    padding: 28px 0;
 }
+
+header .navbar-header .navbar-brand .brand-left,
+header .navbar-header .navbar-brand .brand-right {
+    display: inline;
+    background-color: #fff;
+    margin: 0 3px;
+}
+
+header .navbar-header .navbar-brand .brand-left { float: left; width: 28px; }
+header .navbar-header .navbar-brand .brand-right { float: right; }
+
 
 .jumbotron.special {
     position: relative;
@@ -127,4 +139,16 @@ footer {
     padding: 40px 0;
     color: #eee;
     background-color: #222;
+}
+
+@media screen and (min-width: 421px) {
+    header .navbar-header .navbar-brand .brand-right { width: 120px; }
+}
+
+@media screen and (min-width: 366px) and (max-width: 420px) {
+    header .navbar-header .navbar-brand .brand-right { width: 80px; }
+}
+
+@media screen and (max-width: 365px) {
+    header .navbar-header .navbar-brand .brand-right { width: 28px; }
 }
